@@ -1,0 +1,30 @@
+.box{
+    width: 100%;
+    max-width: 320px;   
+    background-color: #1a2438;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-align: center;
+}
+.icon{
+    color: #1c9877;
+    font-size: 23px;
+}
+.label{
+    color: #1c9877;
+    font-size: 20px;
+
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    background: conic-gradient(#1c9877 0deg 100deg, #f0f0f0 100deg 360deg);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}

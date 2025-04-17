@@ -1,0 +1,79 @@
+
+.sidebar {
+  width: 270px;
+  background-color: #1a2438;
+  color: white;
+  height: 100vh;
+  z-index: 999;
+  padding: 20px;
+  position: fixed;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+.profile img {
+  width: 150px;
+  border: 6px solid #888;
+  border-radius: 50%;
+}
+
+/* حالة الـ Sidebar المُغلق */
+.sidebar.collapsed {
+  width: 70px;
+  padding: 20px 10px;
+}
+
+/* تخفي التفاصيل عند إغلاق الـ Sidebar */
+.sidebar.collapsed .profile,
+.sidebar.collapsed .menu,
+.sidebar.collapsed .logo {
+  display: none;
+}
+
+/* تحجيم الأيقونات عند إغلاق الـ Sidebar */
+.sidebar.collapsed .bar-icon {
+  font-size: 24px;
+}
+
+.bar-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.profile p {
+  color: #888;
+  margin-top: -8px;
+}
+
+/* تكبير المساحة الرئيسية عند إغلاق الـ Sidebar */
+.main-content {
+  margin-left: 270px;
+  transition: all 0.3s ease;
+}
+
+.sidebar.collapsed ~ .main-content {
+  margin-left: 70px;
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: #141b2d;
+  height: 150vh;
+
+}
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+  .sidebar.collapsed .bar-icon {
+    font-size: 24px;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+}

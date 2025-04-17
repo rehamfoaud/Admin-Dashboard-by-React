@@ -1,0 +1,29 @@
+.MuiDataGrid-columnHeaders{ 
+    background-color: #1c9877 !important;           
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+.MuiDataGrid-row--borderBottom{
+    background-color: #1c9877 !important; 
+}
+.MuiDataGrid-columnSeparator{
+    display: none !important;
+}
+.css-1tdeh38{
+    /* background-color: #1c9877; */
+    margin-top: 4px;
+
+}
+/* .MuiDataGrid-cellEmpty {
+    background-color:#1a2438  !important; 
+    
+} */
+  
+.MuiDataGrid-cell{
+    margin: 5px 0 15px ;
+}
+
+.MuiPaper-root{
+    margin-left: 10px;
+}
